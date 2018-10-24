@@ -12,30 +12,11 @@
 */
 
 Route::get('/', function() {
-    return view('test');
+    return view('simple');
 });
 
 
-
-
-
-
-
-Route::get('/about', function () {
-    return view('pages.about');
-
-});
-
-Route::get('/users/{id}', function ($id) {
-    return 'This is user'.$id;
-
-});
-
-
-Route::get('/test', function () {
-    return view('dashboard');
-});
-
+/*
 Route::get('/fileCabinet/listFiles', function () {
     return view('fileCabinet/listFiles');
 });
@@ -49,9 +30,14 @@ Route::get('fileCabinet/getAllFilesJson', array('as' => 'getAllFilesJson', 'uses
 Route::delete('fileCabinet/delete', array('as' => 'postCompanyFileDelete', 'uses' => 'FileController@deleteCompanyFile'));//
 
 
-
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+*/
+
+
+
+
+
+
+
