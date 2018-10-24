@@ -11,9 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function() {
+    return view('test');
 });
+
+
+
+
+
+
+
+Route::get('/about', function () {
+    return view('pages.about');
+
+});
+
+Route::get('/users/{id}', function ($id) {
+    return 'This is user'.$id;
+
+});
+
 
 Route::get('/test', function () {
     return view('dashboard');
@@ -34,3 +51,7 @@ Route::delete('fileCabinet/delete', array('as' => 'postCompanyFileDelete', 'uses
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

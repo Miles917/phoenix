@@ -29,7 +29,7 @@
 
         <!-- Scripts -->
         <script>window.Laravel = {!! json_encode(['csrfToken' => csrf_token(),]) !!};</script>
-        <script type="text/javascript" src="{!! public_path().'/js/jquery.js !!}"></script>
+        <script type="text/javascript" src="{!! public_path().'/js/jquery.js' !!}"></script>
     </head>
     <body>
         <!-- Page Container -->
